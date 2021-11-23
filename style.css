@@ -1,28 +1,45 @@
-
-.content {
-    display: flex; 
-    width: 100%;
-    flex-direction: column;
-
-}
-
 main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    
 }
 
 header {
-    height: 100px;
+    height: 150px;
     width: 100%;
     background: #495867;
     display: flex; 
     flex-flow: row center;
     justify-content: center;
     align-items: center;
- 
-  
+    border-bottom: dotted #E7AD99;
+}
+
+aside {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right:10px;
+    padding-left: 10px;
+    border-left: dotted #E7AD99;
+}
+
+/* vill styla alla bottoms förutom sista*/
+article {
+    border-bottom: dotted #E7AD99;
+}
+
+footer {
+    height: 150px;
+    width: 100%;
+    background: #495867;
+    display: flex; 
+    flex-flow: row center;
+    justify-content: center;
+    align-items: center;
+    border-top: dotted #E7AD99;
 }
 
 h1 {
@@ -32,14 +49,50 @@ h1 {
     letter-spacing: 3px;
 }
 
-.container-wrapper{
+img {
+    position: absolute;
+    bottom: 10px;
+}
+
+h3 {
+    font-size: 16pt;
+    padding-left: 20px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+a {
+    color: #333D48;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    color: #495867;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+
+.content article:not(last-child){
+    border: none;
+}
+
+.content {
+    display: flex; 
+    width: 100%;
+    flex-direction: column;
+}
+.container-wrapper {
     width: 100%;
     display: flex; 
     flex-direction: row;
     font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
     background: #CE796B;
     color: #333D48;
-  
 }
 
 .recept {
@@ -48,16 +101,13 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-around; 
     padding: 10px;
-    
-
-
+    margin-top: 20px;
 }
 
 .recept-and-ingredients {
     display: flex; 
     flex-direction: row;
 }
-
 
 .image-and-title {
     height: 450px;
@@ -73,17 +123,7 @@ h1 {
     position: relative;
 }
 
-
-img {
-    position: absolute;
-    bottom: 10px;
-}
-
-
-
-
-.ingredients{
-    
+.ingredients {
     height: 450px;
     width: 270px;
     padding: 10px;
@@ -91,7 +131,7 @@ img {
     margin-right: 10px;
     background: #ECC8AF;
     border: solid 3px #E7AD99;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .prep{
@@ -101,7 +141,7 @@ img {
     margin-right: 5px;
     background: #ECC8AF;
     border: solid 3px #E7AD99;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .cooking-class {
@@ -110,10 +150,8 @@ img {
     justify-content: flex-start;
 }
 
-
-
 .cook {
-    height: 300px;
+    height: 330px;
     width: 940px;
     padding: 10px;
     background: #ECC8AF;
@@ -121,29 +159,7 @@ img {
     font-size: 16px;
     margin-top: 10px;
     margin-left: -6px;
-    
-}
-
-h3 {
-    font-size: 16pt;
-    padding-left: 20px;
-}
-
-li {
-    margin: 8px 0;
-}
-
-
-aside {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin-bottom: 100px;
-    border-left: dotted #ECC8AF;
-    
+    margin-bottom: 25px;
 }
 
 .inside-aside {
@@ -152,5 +168,5 @@ aside {
     padding: 10px;
     background: #ECC8AF;
     border: solid 3px #E7AD99;
-    font-size: 12pt;
+    font-size: 11pt;
 }
